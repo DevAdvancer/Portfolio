@@ -173,48 +173,19 @@ document.onkeydown = (e) => {
   }
 };
 
-
-// document.onkeydown = (e) => {
-//   if (e.key === 123) {
-//     e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key === 'I') {
-//     e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key === 'C') {
-//     e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.key === 'J') {
-//     e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.key === 'U') {
-//     e.preventDefault();
-//   }
-//   if (e.ctrlKey && e.key === 'U') {
-//     e.preventDefault();
-//   }
-// };
-//
-// $(document).ready(function() {
-//   $('#contactForm').submit(function(e) {
-//     e.preventDefault();
-//
-//     // Get form data
-//     var formData = $(this).serialize();
-//
-//     // AJAX request to send form data to the server-side script
-//     $.ajax({
-//       type: 'POST',
-//       url: 'send_email.php', // Replace with your server-side script URL
-//       data: formData,
-//       success: function(response) {
-//         // Handle the response (e.g., show a success message)
-//         console.log(response);
-//       },
-//       error: function(error) {
-//         // Handle the error
-//         console.error(error);
-//       }
-//     });
-//   });
-// });
+function sendEmail () {
+  Email.send({
+    SecurityToken: "d22ca0fa-d94d-47b8-a965-4f105a9fd271",
+    // Host: "smtp.gmail.com",
+    // Username: "mymail@gmail.com",
+    // Password: "Password",
+    To: "theabhirupkumar@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "New Contact Form Enquiry",
+    Body: "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+      + "<br> Message: " + document.getElementById("message").value
+  }).then(
+    message => alert("Message sent Successfully")
+  );
+}
