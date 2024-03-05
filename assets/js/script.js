@@ -175,3 +175,27 @@ document.onkeydown = (e) => {
     e.preventDefault();
   }
 };
+//
+// $(document).ready(function() {
+//   $('#contactForm').submit(function(e) {
+//     e.preventDefault();
+//
+//     // Get form data
+//     var formData = $(this).serialize();
+//
+//     // AJAX request to send form data to the server-side script
+//     $.ajax({
+//       type: 'POST',
+//       url: 'send_email.php', // Replace with your server-side script URL
+//       data: formData,
+//       success: function(response) {
+//         // Handle the response (e.g., show a success message)
+//         console.log(response);
+//       },
+//       error: function(error) {
+//         // Handle the error
+//         console.error(error);
+//       }
+//     });
+//   });
+// });
