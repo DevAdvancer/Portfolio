@@ -171,7 +171,7 @@ document.onkeydown = (e) => {
   if (e.ctrlKey && e.shiftKey && e.key === 'J') {
     e.preventDefault();
   }
-  if (e.ctrlKey && e.shiftKey && e.key === 'U') {
+  if (e.ctrlKey && e.key === 'U') {
     e.preventDefault();
   }
   if (e.ctrlKey && e.key === 'U') {
