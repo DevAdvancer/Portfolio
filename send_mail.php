@@ -14,5 +14,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         throw new Exception("Error sending message");
     }
-}
+} 
 ?>
