@@ -997,6 +997,7 @@ main {
   z-index: 1;
 }
 
+
 .coding-post-item > a::before {
   content: "";
   position: absolute;
@@ -1268,7 +1269,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 100px;
   }
 
-
+  
 
   /**
    * #SIDEBAR
@@ -1458,7 +1459,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .coding-content { padding: 25px; }
 
-
+  .Pad {
+    /* padding-top: 30px; */
+  }
 
   /**
    * #CONTACT
