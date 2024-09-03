@@ -155,68 +155,6 @@ document.onkeydown = (e) => {
   }
 };
 
-// contact form variables
-// const form = document.querySelector("[data-form]");
-// const formInputs = document.querySelectorAll("[data-form-input]");
-// const formBtn = document.querySelector("[data-form-btn]");
-//
-// // add event to all form input field
-// for (let i = 0; i < formInputs.length; i++) {
-//   formInputs[i].addEventListener("input", function () {
-//
-//     // check form validation
-//     if (form.checkValidity()) {
-//       formBtn.removeAttribute("disabled");
-//     } else {
-//       formBtn.setAttribute("disabled", "");
-//     }
-//
-//   });
-// }
-
-// $(document).ready(function () {
-//   $("#contact-form").validate({
-//     rules: {
-//       fullname: {
-//         required: true,
-//       },
-//       email: {
-//         required: true,
-//         email: true,
-//       },
-//       message: {
-//         required: true,
-//       },
-//     },
-//     message: {
-//       fullname: {
-//         required: "Please enter your full name",
-//       },
-//       email: {
-//         required: "PLease enter your valid email address",
-//         email: "Please enter a valid email address",
-//       },
-//       message: {
-//         required: "Please enter your message",
-//       },
-//     },
-//     submitHandler: function (form) {
-//       $.ajax({
-//         url: $(form).attr("action"),
-//         type: "POST",
-//         data: $(form).serialize(),
-//         success: function (response) {
-//           alert("Message sent successfully");
-//           $(form)[0].reset();
-//         },
-//         error:function (response) {
-//           alert("Error sending message");
-//         },
-//       });
-//     },
-//   });
-// });
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.querySelector("[data-form]");
   const formInputs = document.querySelectorAll("[data-form-input]");
@@ -265,21 +203,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-
-
-// function sendEmail () {
-//   Email.send({
-//     SecurityToken: "d22ca0fa-d94d-47b8-a965-4f105a9fd271",
-//     // Host: "smtp.gmail.com",
-//     // Username: "mymail@gmail.com",
-//     // Password: "Password",
-//     To: "theabhirupkumar@gmail.com",
-//     From: document.getElementById("email").value,
-//     Subject: "New Contact Form Enquiry",
-//     Body: "Name: " + document.getElementById("name").value
-//     + "<br> Email: " + document.getElementById("email").value
-//       + "<br> Message: " + document.getElementById("message").value
-//   }).then(
-//     message => alert("Message sent Successfully")
-//   );
-// }
