@@ -1,32 +1,32 @@
 :root {
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    135deg,
+    hsla(45, 100%, 71%, 0.251) 0%,
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
+    to right,
+    hsl(45, 100%, 72%),
     hsl(35, 100%, 68%)
   );
   --jet: hsl(0, 0%, 22%);
@@ -401,9 +401,9 @@ main {
 \*-----------------------------------*/
 
 .navbar {
-  position: fixed;
+  position:fixed;
   bottom: 0;
-  left: 0;
+  left: 20px;
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
@@ -455,7 +455,7 @@ main {
 
 
 /**
- * #service 
+ * #service
  */
 
 .service { margin-bottom: 35px; }
@@ -503,7 +503,7 @@ main {
 
 
 /**
- * #testimonials 
+ * #testimonials
  */
 
 .testimonials { margin-bottom: 30px; }
@@ -669,7 +669,7 @@ main {
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients { margin-bottom: 15px; }
@@ -714,7 +714,7 @@ main {
 
 
 /**
- * education and experience 
+ * education and experience
  */
 
 .timeline { margin-bottom: 30px; }
@@ -777,7 +777,7 @@ main {
 
 
 /**
- * skills 
+ * skills
  */
 
 .skills-title { margin-bottom: 20px; }
@@ -1191,7 +1191,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * #PORTFOLIO, BLOG 
+   * #PORTFOLIO, BLOG
    */
 
   .project-img,
@@ -1269,7 +1269,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-bottom: 100px;
   }
 
-  
+
 
   /**
    * #SIDEBAR
@@ -1459,10 +1459,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .coding-content { padding: 25px; }
 
-  .Pad {
-    /* padding-top: 30px; */
-  }
-
   /**
    * #CONTACT
    */
@@ -1587,7 +1583,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: max-content;
     margin-left: auto;
   }
-  
+
 }
 
 
@@ -1630,10 +1626,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
   /**
-   * MAIN 
+   * MAIN
    */
 
-  main { margin-bottom: 60px; }
+  main {
+
+    margin-bottom: 60px; }
 
   .main-content {
     position: relative;
@@ -1655,13 +1653,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     right: 0;
     width: max-content;
     border-radius: 0 20px;
-    padding: 0 20px;
+    padding: 0 0px;
     box-shadow: none;
   }
 
   .navbar-list {
     gap: 30px;
-    padding: 0 20px;
+    padding: 0 15px;
   }
 
   .navbar-link { font-weight: var(--fw-500); }
