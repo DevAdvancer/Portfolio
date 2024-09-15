@@ -880,9 +880,10 @@ main {
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr, 1fr;
   gap: 30px;
   margin-bottom: 10px;
+  justify-content: center;
 }
 
 .project-item { display: none; }
